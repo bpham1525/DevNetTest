@@ -17,9 +17,7 @@ class TestClassB(TestClassA):
         self.c = 5
 
     def testfuncB(self):
-        d = self.d
-        e = self.c
-        return d + e
+        return self.d + self.c
 
     def testfuncC(self):
         return self.d + self.c
@@ -32,6 +30,4 @@ if __name__ == '__main__':
     tb = TestClassB()
 
     print(ta.testfuncA())
-    print(tb.testfuncA())
-    print(tb.testfuncB())
     print(tb.testfuncC())
