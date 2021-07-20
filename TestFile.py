@@ -21,6 +21,9 @@ class TestClassB(TestClassA):
         e = self.c
         return d + e
 
+    def testfuncC(self):
+        return self.d + self.c
+
 
 if __name__ == '__main__':
     print('Hello World')
@@ -31,3 +34,4 @@ if __name__ == '__main__':
     print(ta.testfuncA())
     print(tb.testfuncA())
     print(tb.testfuncB())
+    print(tb.testfuncC())
